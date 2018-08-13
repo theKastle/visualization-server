@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://theKastle.github.io/visualization",
   "dependencies": {
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "express": "^4.16.3",
-    "google-trends-api": "^4.7.0"
+    "google-trends-api": "^4.7.0",
+    "lodash": "^4.17.10",
+    "p-iteration": "^1.1.7"
   },
   "devDependencies": {},
   "scripts": {
     "start": "node index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
